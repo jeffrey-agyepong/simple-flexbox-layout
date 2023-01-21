@@ -3,7 +3,6 @@ body {
 }
 
 .container {
-    width: 960px;
     margin: 0 auto;
 }
 
@@ -20,4 +19,23 @@ section {
     border: 2px solid #000000;
     border-radius: 5px;
     background-color: #fff;
+}
+
+/* mobile devices */
+@media screen and (max-width: 50rem) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+}
+
+
+/* large devices */
+@media screen and (min-width: 70rem) {
+    .container {
+        width: 960px;
+    }
 }
